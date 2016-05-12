@@ -30,8 +30,8 @@
 	var authenticationController = module.parent.require('./controllers/authentication');
 
 	var constants = Object.freeze({
-			type: '',	// Either 'oauth' or 'oauth2'
-			name: '',	// Something unique to your OAuth provider in lowercase, like "github", or "nodebb"
+			type: 'oauth2',	// Either 'oauth' or 'oauth2'
+			name: 'yoov',	// Something unique to your OAuth provider in lowercase, like "github", or "nodebb"
 			oauth: {
 				requestTokenURL: '',
 				accessTokenURL: '',
@@ -40,10 +40,10 @@
 				consumerSecret: ''
 			},
 			oauth2: {
-				authorizationURL: '',
-				tokenURL: '',
-				clientID: '',
-				clientSecret: ''
+				authorizationURL: 'http://localhost:3000/oauth/authorize',
+				tokenURL: 'http://localhost:3000/oauth/token',
+				clientID: 'fk',
+				clientSecret: 'fkfk'
 			},
 			userRoute: ''	// This is the address to your app's "user profile" API endpoint (expects JSON)
 		}),
