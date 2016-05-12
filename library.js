@@ -45,7 +45,7 @@
 				clientID: 'fk',
 				clientSecret: 'fkfk'
 			},
-			userRoute: ''	// This is the address to your app's "user profile" API endpoint (expects JSON)
+			userRoute: 'http://localhost:3000/api/v1/users/self'	// This is the address to your app's "user profile" API endpoint (expects JSON)
 		}),
 		configOk = false,
 		OAuth = {}, passportOAuth, opts;
