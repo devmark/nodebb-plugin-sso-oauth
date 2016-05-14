@@ -40,12 +40,12 @@
 				consumerSecret: ''
 			},
 			oauth2: {
-				authorizationURL: 'http://localhost:3000/oauth/authorize',
-				tokenURL: 'http://localhost:3000/oauth/token',
+				authorizationURL: 'http://account.yoov.com/oauth/authorize?state=92ks8829',
+				tokenURL: 'http://account.yoov.com/oauth/token',
 				clientID: 'fk',
 				clientSecret: 'fkfk'
 			},
-			userRoute: 'http://localhost:3000/api/v1/users/self'	// This is the address to your app's "user profile" API endpoint (expects JSON)
+			userRoute: 'http://account.yoov.com/api/v1/users/self'	// This is the address to your app's "user profile" API endpoint (expects JSON)
 		}),
 		configOk = false,
 		OAuth = {}, passportOAuth, opts;
